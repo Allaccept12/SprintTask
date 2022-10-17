@@ -7,6 +7,8 @@
 - 프로젝트 루트 경로에서 `docker-compose up` 실행 (백그라운드로 실행하려면 `docker-compose up -d`)
 : runs the application(spring-boot port:8080) and its db (mysql port: 3306)
 
+- DB 접속은 `docker exec -it sprint_database bash` 접속
+
 ## API
 1. 저자 등록 - POST : '/api/author'
 2. 책 등록 - POST : '/api/book'
