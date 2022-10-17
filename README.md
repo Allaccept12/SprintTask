@@ -4,7 +4,7 @@
 - 전제조건 (java11, docker 설치)
 
 ## 컴파일 방법 
-### 프로젝트 루트 경로에서 `docker-compose up` 실행 (백그라운드로 실행하려면 `docker-compose up -d`)
+- 프로젝트 루트 경로에서 `docker-compose up` 실행 (백그라운드로 실행하려면 `docker-compose up -d`)
 : runs the application(spring-boot port:8080) and its db (mysql port: 3306)
 
 ## API
@@ -14,7 +14,7 @@
 4. 책 전체 조회 - GET : '/api/book'
 
 ## Swagger ui
-http://localhost:8081/swagger-ui/index.html
+http://localhost:8080/swagger-ui/index.html
 
 ## “왜” 이렇게 작성하였는지 :
 
