@@ -24,10 +24,10 @@ public class Book {
     @Column(nullable = false)
     private boolean extinction;
 
-    @Column(nullable = false)
+    @Column(name = "total_pages",nullable = false)
     private Integer totalPages;
 
-    @Column(nullable = false)
+    @Column(name = "publication_of_year",nullable = false)
     private String publicationOfYear;
 
     @Column(nullable = false)
