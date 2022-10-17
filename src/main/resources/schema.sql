@@ -1,6 +1,6 @@
+drop table if exists BookAuthors;
 drop table if exists Author;
 drop table if exists Book;
-drop table if exists BookAuthors;
 
 create table Author(
     author_id bigint not null auto_increment ,
