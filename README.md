@@ -29,9 +29,8 @@ http://localhost:8081/swagger-ui/index.html
 
 크게 제 프로젝트는 인프라는 없지만 글로벌패키지(공통적인 객체), 인프라스트럭처패키지(이메일 알림, sms알림 등 외부서비스), 도메인패키지(도메인 각자 레이어를 가짐)을 가집니다. 도메인은 저 나름의 에그리거트를 기준으로  모아서 패키지를 구성했습니다.
 
-3.  AuthorNotFoundExcetion이 application패키지에 같이 있는 이유
+3. AuthorNotFoundExcetion이 application패키지에 같이 있는 이유
     이번 프로젝트에서 ExceptionClass를 따로 빼서 관리하지 않은 이유는 두 가지가 있는데 첫 번째는 Exception을 현재 사용지가 AuthorService에서 밖에 쓰지 않기때문에 따로 관리할 필요성을 느끼지 못했고 확장 된다면 충분히 제어 가능하다고 생각했습니다. 두번쨰는 같은 패키지에 둠으로서 import문을 작성하지 않아도 되는 장점이 있어서 보다 깔끔하게 class파일을 관리할 수 있어서 입니다.
     만약 ExceptionClass가 늘어난다면 따로 해당 도메인 패키지에 Exception패키지를 구성해서 한곳에서 관리하는게 용이하다고 생각하지만 현재는 많이 작고, 늘어난다해도 제어가능하다고 생각하였습니다. 
-
 
 
